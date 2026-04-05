@@ -1,16 +1,21 @@
-﻿namespace Maui.CopilotInstructions.App.ViewModels;
-
-public class MainPageViewModel
+﻿namespace Maui.CopilotInstructions.App.ViewModels
 {
-    public string Name { get; set; }
-
-    public MainPageViewModel()
+    public class MainPageViewModel
     {
+        #region Properties
 
-    }
+        public string Name { get; set; } = string.Empty;
 
-    public void A(string B)
-    {
-        var a = this.Name!;
+        #endregion
+
+        #region Public Methods
+
+        public void SetName(string name)
+        {
+            ArgumentNullException.ThrowIfNull(name);
+            Name = name;
+        }
+
+        #endregion
     }
 }
