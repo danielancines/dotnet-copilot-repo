@@ -1,12 +1,15 @@
-﻿namespace Maui.CopilotInstructions.App
+﻿using Maui.CopilotInstructions.App.ViewModels;
+
+namespace Maui.CopilotInstructions.App
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        int count = 10;
 
-        public MainPage()
+        public MainPage(MainPageViewModel mainPageViewModel)
         {
             InitializeComponent();
+            this.BindingContext = mainPageViewModel;
         }
 
         private void OnCounterClicked(object? sender, EventArgs e)
