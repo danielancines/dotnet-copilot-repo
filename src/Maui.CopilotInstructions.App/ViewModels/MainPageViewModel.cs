@@ -2,9 +2,15 @@
 
 public class MainPageViewModel
 {
-}
+    public string Name { get; set; }
 
-public enum ViewTypes
-{
-    MainPage
+    public MainPageViewModel()
+    {
+
+    }
+
+    public void A(string B)
+    {
+        var a = this.Name!;
+    }
 }
