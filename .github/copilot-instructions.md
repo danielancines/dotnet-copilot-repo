@@ -2,7 +2,7 @@
 
 ## General Principles
 
-* Always use regions for
+* Always use regions for (Only add regions with has content, NEVER add an empty region)
   * Events
     * Definition: It contains events for a class
     * Region name: Events
