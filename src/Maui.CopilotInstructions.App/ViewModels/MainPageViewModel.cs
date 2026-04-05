@@ -2,14 +2,6 @@
 {
     public class MainPageViewModel
     {
-        #region Constructor
-
-        public MainPageViewModel()
-        {
-        }
-
-        #endregion
-
         #region Properties
 
         public string Name { get; set; } = string.Empty;
